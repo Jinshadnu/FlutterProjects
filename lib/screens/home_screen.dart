@@ -15,7 +15,14 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text('HomePage'),
       ),
       body: Center(
-
+        child:
+        Column(
+          children: [
+            ElevatedButton(onPressed: () {}, child: Text('Login')),
+            ElevatedButton(onPressed: () {}, child: Text('Register')),
+            Text('Forgot Password ?',style: TextStyle(fontSize: 15,color: Colors.black),)
+          ],
+        )
       ),
     );
   }
